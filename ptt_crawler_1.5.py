@@ -1,6 +1,4 @@
 # 抓取 PTT MobileComm 上的文章（幾天前的文章）
-# Version 1.5: 新增自定看板選項
-## PTT 相關板 summary 最一開始
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -9,7 +7,7 @@ from crawler_tool import get_onepage, calculate_freq
 import datetime as dt
 
 #####################################
-## 品牌關鍵字讀檔，a 到 j 十個品牌
+## 品牌關鍵字讀檔，a 列到 j 列十個品牌
 fh1 = open('./keyword.csv', 'r', encoding = 'big5')
 brand_dict = dict()
 for line in fh1:
